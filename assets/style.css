@@ -1,9 +1,138 @@
+*{
+    box-sizing: border-box;
+}
 body
 {
-    background-image: url(quadra.jpg);
+    background-image: url(imagemfundo.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-header {
+
+header
+{
+       display: inline-block;
     text-align: center;
+    border: 3px solid #D4AF37;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004D2C;
+    color: #fff;
+    }
+    header p
+    {
+        text-align: center;
+        color: #fff;
+        border: 2px ;
+    }
+    .tecnico{
+        display: inline-block;
+        border: 4px solid #D4AF37;
+        padding: 15px;
+        margin-left: 20px;
+        border-radius: 20px;
+        background-color: #004D2C;
+        color: #fff;
+        margin: 20px;
+    }
+    #jogadores{
+        color: #fff;
+        width: fit-content;
+        padding: 20px;
+        border: 4px solid #D4AF37;
+        background-color: #004D2C;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin: 20px;
+        font-family: cursive;
+    }
+
+    a{
+    text-decoration: none;
+    color: #fff;
+}
+.titulo{
+    border: 4px solid #D4AF37;
+    background-color: #004D2C;
+    border-radius: 20px;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    margin: 20px;
+}
+
+.titularesn{
+    border: 2px solid #D4AF37;
+    padding: 10px;
+    margin: 20px;
+    background-color: #D4AF37;
+    border-radius: 12px;
+    margin-left: 20px;
+    color: #004D2C;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    }
+.reservasn{
+    border: 2px solid #D4AF37;
+    padding: 10px;
+    margin: 20px;
+    background-color: #D4AF37;
+    border-radius: 12px;
+    margin-left: 20px;
+    color: #004D2C;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+.comissaon{
+    border: 2px solid #D4AF37;
+    padding: 10px;
+    margin: 20px;
+    background-color: #D4AF37;
+    border-radius: 12px;
+    margin-left: 20px;
+    color: #004D2C;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+#reservas{
+    display: inline-block;
+    border: 4px solid #D4AF37;
+    background-color: #004D2C;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    font-variant: small-caps;
+}
+#comissao_tecnica{
+    border: 4px solid #D4AF37;
+    background-color: #004D2C;
+    margin: 20px;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 30px;
+}
+footer p{
+    font-size: 30px;
+    color: #fff;
+}
+footer{
+    border: 4px solid #D4AF37;
+    border-radius: 20px;
+    background-color: #004D2C;
+    margin: 20px;
+    max-width: fit-content;
+    padding: 20px;
+}
+nav{
+    margin: 20px;
 }
