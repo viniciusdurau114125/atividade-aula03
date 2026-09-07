@@ -10,50 +10,46 @@ body
 
 header
 {
-       display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     text-align: center;
-    border: 3px solid #D4AF37;
-    margin: 15px;
+    margin: 0;
     padding: 20px;
-    border-radius: 100px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    border-radius: 20px;
     background-color: #004D2C;
     color: #fff;
-    }
-    header p
-    {
+}
+header p{
         text-align: center;
         color: #fff;
         border: 2px ;
     }
-    .tecnico{
-        display: inline-block;
+.tecnico{
+        display: grid;
         border: 4px solid #D4AF37;
         padding: 15px;
-        margin-left: 20px;
         border-radius: 20px;
         background-color: #004D2C;
         color: #fff;
-        margin: 20px;
-    }
-    #jogadores{
+}
+#jogadores{
+        gap: 1rem;
         color: #fff;
-        width: fit-content;
         padding: 20px;
         border: 4px solid #D4AF37;
         background-color: #004D2C;
         border-radius: 20px;
-        margin-left: 20px;
-        margin: 20px;
         font-family: cursive;
     }
 
-    a{
+a{
     text-decoration: none;
     color: #fff;
-}
+    max-width: fit-content;
+        }
 .titulo{
     border: 4px solid #D4AF37;
     background-color: #004D2C;
@@ -61,10 +57,18 @@ header
     padding: 20px;
     color: #fff;
     display: inline-block;
-    margin-left: 20px;
+        }
+.conquistasn{
+    border: 2px solid #D4AF37;
+    padding: 10px;
     margin: 20px;
-}
-
+    background-color: #D4AF37;
+    border-radius: 12px;
+    margin-left: 20px;
+    color: #004D2C;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    }
 .titularesn{
     border: 2px solid #D4AF37;
     padding: 10px;
@@ -107,13 +111,12 @@ header
     padding: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
-    margin: 20px;
     font-variant: small-caps;
 }
 #comissao_tecnica{
     border: 4px solid #D4AF37;
     background-color: #004D2C;
-    margin: 20px;
+
     max-width: fit-content;
     padding: 20px;
     border-radius: 20px;
@@ -134,5 +137,57 @@ footer{
     padding: 20px;
 }
 nav{
+    padding: 0%;
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.lista-jogadores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+#titulares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#conquistas{
+    border: 4px solid #D4AF37;
+    border-radius: 20px;
+    background-color: #004D2C;
+    margin: 20px;
+    max-width: fit-content;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    gap: 1rem;
+}
+.grid-conquistas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media(max-width: 600px) {
+    .grid-conquistas{
+        grid-template-columns: 1fr;
+    }
+}
+@media(min-width: 768px){
+    #titulares{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
